@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luke Shahan - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .custom-blue {
+            background-color: #2c3e50;
+        }
+        .custom-blue-text {
+            color: #2c3e50;
+        }
+        .section-header {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #2c3e50;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #2c3e50;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .right-section-header {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: #ffffff;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #ffffff;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        ul {
+            list-style-position: inside;
+        }
+
+        /* --- PRINT STYLES --- */
+        /* These styles only apply when printing or saving as PDF */
+        @media print {
+            /* Remove the gray background from the body for printing */
+            body {
+                background-color: #ffffff;
+            }
+            /* Remove shadow and margins from the main container to use full page width */
+            .print-container {
+                margin: 0;
+                box-shadow: none;
+                max-width: 100%;
+            }
+            /* Ensure the background color of the right column prints */
+            .custom-blue {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            /* Scale down text and spacing slightly to fit on one page */
+            html {
+                font-size: 10px; /* Reduces the base font size for all rem units */
+            }
+            h1 {
+                font-size: 4rem; /* Adjust heading size for print */
+            }
+            .section-header, .right-section-header {
+                font-size: 1rem;
+                margin-bottom: 0.75rem;
+            }
+            section {
+                margin-bottom: 1.25rem !important; /* Use !important to override Tailwind */
+            }
+            /* Reduce padding */
+            .p-8 {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main container with a shadow for a card-like effect -->
+    <!-- Added 'print-container' class for print-specific targeting -->
+    <div class="max-w-4xl mx-auto my-8 shadow-2xl rounded-lg overflow-hidden bg-white print-container">
+        <div class="flex flex-col md:flex-row">
+
+            <!-- Left Column -->
+            <div class="w-full md:w-2/3 p-8">
+                <!-- Name and Title -->
+                <div class="mb-8">
+                    <h1 class="text-5xl font-bold custom-blue-text">LUKE SHAHAN</h1>
+                </div>
+
+                <!-- Professional Summary -->
+                <section class="mb-6">
+                    <h2 class="section-header">Professional Summary</h2>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        A dedicated and detail-oriented software engineering student with a strong foundation in customer service and team collaboration. Possesses hands-on experience in C, Python, Julia, JavaScript, and full-stack web development, complemented by over three years of experience in fast-paced retail and public service environments. Currently pursuing a Bachelor's degree to further develop technical expertise and contribute to innovative software solutions.
+                    </p>
+                </section>
+
+                <!-- Accomplishments -->
+                <section class="mb-6">
+                    <h2 class="section-header">Accomplishments</h2>
+                    <ul class="list-disc text-gray-700 text-sm space-y-2">
+                        <li>Resolved product issue through consumer testing.</li>
+                        <li>Collaborated with team of 6 in the development of Gaming Workout Hub.</li>
+                        <li>Supervised team of 15 staff members.</li>
+                        <li>Documented and resolved a backend server issue which led to storing user data properly.</li>
+                    </ul>
+                </section>
+
+                <!-- Work History -->
+                <section class="mb-6">
+                    <h2 class="section-header">Work History</h2>
+                     <div>
+                        <h3 class="font-bold text-gray-800">Software Development Intern <span class="font-normal text-gray-600">| 07/2025 - Current</span></h3>
+                        <p class="italic text-gray-600 text-sm">Intern to Scholars, Flagstaff, AZ</p>
+                        <ul class="list-disc mt-2 ml-4 text-gray-700 text-sm space-y-2">
+                            <li>Developed software in Julia for a tie-strut systems project by applying topology optimization principles under the guidance of Dr. Subhayan De and Dr. Robin Tuchscherer.</li>
+                            <li>Participated in the Interns-to-Scholars (I2S) Program, completing weekly research and attending group meetings and seminars to further the project's goals.</li>
+                            <li>Presented at the Undergraduate Symposium, showcasing project findings and outcomes while also attending other presentations to broaden academic knowledge.</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="font-bold text-gray-800">Specialist <span class="font-normal text-gray-600">| 03/2025 - Current</span></h3>
+                        <p class="italic text-gray-600 text-sm">Sam's Club, Flagstaff, AZ</p>
+                        <ul class="list-disc mt-2 ml-4 text-gray-700 text-sm space-y-2">
+                            <li>Drove membership acquisition and renewals by effectively communicating the value proposition of Sam's Club benefits, resulting in consistent growth of the member base.</li>
+                            <li>Served as the primary point of contact for member inquiries, resolving complex account issues with a high degree of professionalism and ensuring a positive and seamless member experience.</li>
+                            <li>Served as a team lead whenever team lead is not present.</li>
+                        </ul>
+                    </div>
+                   
+                </section>
+
+                <!-- Education -->
+                <section class="mb-6">
+                    <h2 class="section-header">Education</h2>
+                    <div class="mb-2">
+                        <h3 class="font-bold text-gray-800">Bachelor of Science, Software Engineering</h3>
+                        <p class="italic text-gray-600 text-sm">Northern Arizona University - Flagstaff, AZ</p>
+                        <p class="text-gray-600 text-sm">Completed By 2027</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-gray-800">Minor in Applied Science, Computer Science</h3>
+                        <p class="italic text-gray-600 text-sm">Northern Arizona University - Flagstaff, AZ</p>
+                        <p class="text-gray-600 text-sm">Completed By 2027</p>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section>
+                    <h2 class="section-header">Certifications</h2>
+                    <p class="text-gray-700 text-sm">Bootcamp For Web Development Training (Udemy) - Since August 2024</p>
+                </section>
+
+            </div>
+
+            <!-- Right Column -->
+            <div class="w-full md:w-1/3 p-8 custom-blue text-white">
+                
+                <!-- Contact Info -->
+                <section class="mb-8">
+                    <div class="flex items-center mb-3">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                        <span class="text-sm">Flagstaff, AZ 86001</span>
+                    </div>
+                    <div class="flex items-center mb-3">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.518.759a11.03 11.03 0 004.28 4.28l.759-1.518a1 1 0 011.06-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                        <span class="text-sm">(623) 210-4934</span>
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        <span class="text-sm">LDS11football@gmail.com</span>
+                    </div>
+                </section>
+
+                <!-- Websites, Portfolios, Profiles -->
+                <section class="mb-8">
+                    <h2 class="right-section-header">Websites, Portfolios, Profiles</h2>
+                    <ul class="list-disc text-sm space-y-2">
+                       <a href="https://gaming-workout-hub.onrender.com/"> <li>Gaming Workout Hub</li></a>
+                        <a href="https://lds295.z13.web.core.windows.net/homework8/"> <li>Portfolio</li></a>
+                      
+                    </ul>
+                </section>
+
+                <!-- Skills -->
+                <section class="mb-8">
+                    <h2 class="right-section-header">Skills</h2>
+                    <ul class="text-sm space-y-3">
+                        <li><strong>Languages:</strong> C, Python, Linux, Julia, JavaScript, HTML/CSS</li>
+                        <li><strong>Frameworks & Technologies:</strong> Node.js, SQL, Express, React </li>
+                        <li><strong>Developer Tools:</strong> Git, VS Code, MySQL Workbench, Command Line</li>
+                        <li>Root-cause analysis</li>
+                        <li>Resource allocation</li>
+                        <li>Workflow automation</li>
+                        <li>Multitasking</li>
+                        <li>Team building</li>
+                    </ul>
+                </section>
+
+                <!-- Gaming Workout Hub Project -->
+                <section>
+                    <h2 class="right-section-header">Gaming Workout Hub</h2>
+                    <ul class="list-disc text-sm space-y-2 mb-4">
+                        <li>Developed a full-stack web app using HTML, CSS, and JavaScript.</li>
+                        <li>Created an interactive site for gamers to share fitness routines.</li>
+                        <li>Engineered the front-end and back-end for user experience and data management.</li>
+                    </ul>
+                    <h3 class="font-bold mb-2">Inventory Tracker</h3>
+                    <ul class="list-disc text-sm space-y-2 mb-4">
+                        <li>Built a command-line inventory management application with Python and SQL.</li>
+                        <li>Implemented a MySQL database to track stock levels.</li>
+                    </ul>
+                    <h3 class="font-bold mb-2">Node.js Task Scheduler</h3>
+                    <ul class="list-disc text-sm space-y-2">
+                        <li>Developed a server-side application with Node.js to schedule tasks.</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
